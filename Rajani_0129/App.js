@@ -46,7 +46,7 @@ export default App;*/
  			val:0
  		}
  	}
-    update(){
+    update(e){
  		this.setState({val:this.state.val+1})
  	}
 	render(){
