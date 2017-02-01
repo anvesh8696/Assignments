@@ -1,6 +1,6 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 
 
 //statefull component
@@ -33,7 +33,13 @@ class App extends React.Component {
 const Button = (props) =><button>{props.children}</button>
 
 const Heart = () => <span>&hearts;</span>*/
-class App extends React.Component {
+
+/*class App extends React.Component {
+    render(){
+        return <Sample name="GG"/>
+    }
+}
+class State extends App {
     constructor(){
         super()
         this.state ={
@@ -54,11 +60,6 @@ class App extends React.Component {
     }
 }
 
-/*class App extends React.Component {
-    render(){
-        return <Sample name="GG"/>
-    }
-}
 const Sample =(props)=> <h1>{props.name}</h1>
 
 Sample.propTypes = {
@@ -69,10 +70,46 @@ Sample.propTypes = {
         if((props[propName].length)<6){
             return new Error(`${propName} is too short`)
         }
-
     }
 }*/
+class App extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            items :[]
+
+        }
+    }
+    filter(e){
+        this.setState({filter:e.target.value})
+    }
+    componentWillMount(){
+        fetch('https://swapi.co/api/people/?format=json').then(response =>response.json())
+    .then(({results:items})=>this.setState({items}))
+    }
+    render(){
+        let items = this.state.items
+        if(this.state.filter){
+            items = items.filter(item=>item.name.toLowerCase().includes(this.state.filter.toLowerCase()))
+        }
+        return (
+            <div>
+           Sort : <input type="text" onChange={this.filter.bind(this)}/>
+        {items.map(item=><Person update={item}/>)}
+
+
+    </div>
+    )
+    }
+}
+
+const Person = (prop) =><div class="view"> <h4> Name:{prop.update.name} <br/>
+                             Vehicles:{prop.update.vehicles}<br/>
+                             Starships: {prop.update.starships}<br/>
+                             Species:{prop.update.species} </h4> </div>
+
 
 export default App;
+
 
 
