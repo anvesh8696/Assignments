@@ -1,13 +1,19 @@
 import React from 'react';
-
-
+const styles = {
+    anchorStyle: {
+        display: 'inline-block',
+        color: 'green',
+    },
+};
 class App extends React.Component{
     constructor(){
         super();
         this.state = {
-            items :[]
+            items :[],
+            filter: '',
         }
     }
+
    filter(e){
         this.setState({filter:e.target.value})
     }
@@ -23,17 +29,25 @@ class App extends React.Component{
         return (
         <div>
             <input type="text" onChange={this.filter.bind(this)}/>
-            {items.map(item=><PersonFilms update={item}/>)}
-            {items.map(item=><PersonVehicles update={item}/>)}
-            {items.map(item=><PersonStarships update={item}/>)}
+            {items.map(item=> {return(
+            <div>
+                <PersonFilms update={item}/>
+                <PersonVehicles update={item}/>
+                <PersonStarships update={item}/>
+            </div>
+            )}
+            )}
         </div>
         )
     }
 }
-const PersonFilms = (prop) =><h5>Films of {prop.update.name} are : {prop.update.films}</h5>
-const PersonVehicles = (prop) =><h5>Vehicles of {prop.update.name} are : {prop.update.vehicles}</h5>
-const PersonStarships = (prop) =><h5>Starships of {prop.update.name} are : {prop.update.starships}</h5>
+const PersonFilms = (prop) => { return (<p><h3>Name: {prop.update.name}</h3> Films: {prop.update.films.map(item => <AnchorTag item={item} />)}</p>);}
+const PersonVehicles = (prop) => { return (<p>Vehicles: {prop.update.vehicles.map(item => <AnchorTag item={item} />)}</p>);}
+const PersonStarships = (prop) => { return (<p>Starships: {prop.update.starships.map(item => <AnchorTag item={item} />)}</p>);}
+
+const AnchorTag = (prop) => {return( <p> <a href={prop.item} style={styles.anchorStyle}> {prop.item} </a> {',  '}</p>);}
 
 
 
 export default App;
+
