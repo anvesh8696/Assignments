@@ -2,7 +2,12 @@ import React from 'react';
 
 const App = React.createClass({
 
-const events = [];
+  constructor(){
+     super();
+     this.state = {
+        events : ["sample"];
+      }
+  }
 
       componentWillMount() {
           const events = this.state.events;
@@ -24,5 +29,6 @@ const events = [];
           );
       }
   });
-  
+
+
 export default App;
