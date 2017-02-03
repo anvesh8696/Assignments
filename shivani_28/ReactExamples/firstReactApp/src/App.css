@@ -2,15 +2,35 @@
   text-align: center;
 }
 
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+  
+}
 
+.navbar-inverse{
+      border-style: none;
+}
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 130px;
   padding: 20px;
   color: white;
 }
 
+#logo{
+  font-size: 20px;
+  color: #0EF0F0;
+}
+
+
+.App-hp{
+
+  margin-top: 50px;
+  width: 900px;
+  height: 350px;
+}
 .container{
 
   margin-top: 20px;
@@ -25,7 +45,7 @@ table{
   height: 50px;
   padding: 10px;
   color: white;
-  margin-top: 260px;
+  margin-top: 290px;
 
 }
 .App-intro {
@@ -35,4 +55,15 @@ table{
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+table th{
+
+  text-align: center;
+}
+
+ .filter-input{
+
+float: right;
 }
