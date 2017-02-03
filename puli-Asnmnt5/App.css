@@ -1,0 +1,27 @@
+.links {
+  text-align: center;
+}
+.bodyStyle {
+  background-color:grey;
+  align-content: center;
+  text-align: center;
+}
+.headerPart {
+  color:yellow;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+img{
+  width: 1340px;
+}
+ul li{
+  list-style-type: none;
+}
+.links {
+  margin-left: 10px;
+}
+nav {
+  text-align: center;
+}
