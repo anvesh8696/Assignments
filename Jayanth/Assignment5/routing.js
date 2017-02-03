@@ -11,6 +11,8 @@ const Home = () => <div>
                         for exactly what you get, and that means booking through a website you trust.
                          There are many standout companies, especially Travelx with perks like secret deals,
                           a smooth booking process, and discounts on places like vacation rentals and hostels.
+                          <img src="https://s-media-cache-ak0.pinimg.com/originals/af/a7/24/afa724205186256075938ab1fc0eefde.jpg" />
+
                        </div>
                    </div>
 
