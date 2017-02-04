@@ -12,9 +12,15 @@
       border-style: none;
 }
 
+.navbar-nav{
+
+  margin-left: 450px;
+   background-color: #222;
+}
+
 .App-header {
   background-color: #222;
-  height: 130px;
+  height: 80px;
   padding: 20px;
   color: white;
 }
@@ -34,6 +40,7 @@
 .container{
 
   margin-top: 20px;
+  text-align: center;
 }
 
 table{

@@ -3,7 +3,7 @@ import './App.css';
 
 
 
-class ReactJs extends Component {
+class ReactContent extends Component {
     render(){
         return (
         	<div className="container">
@@ -122,4 +122,4 @@ delRow(){
         }   
   }
 
-export default ReactJs;
+export default ReactContent;
