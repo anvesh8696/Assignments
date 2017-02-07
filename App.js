@@ -61,12 +61,12 @@ export default App;*/
 // export default App;
 
 
-import React from 'react';
+/*import React from 'react';
 
 class App extends React.Component {
 constructor(){
 	super();
-	this.state = {
+	this.state = {/
 		items :[]
 	}
 }
@@ -90,7 +90,6 @@ render(){
 	)
 }
 }
-
 const Person = (prop) =>
                         <div>
                            <h4>
@@ -105,5 +104,64 @@ const Person = (prop) =>
                           </h4>
                         </div>
 
+export default App;*/
+
+import React from 'react';
+import styles from './App.css'
+import {Router, Route, Link, browserHistory} from 'react-router'
+
+/*class App extends React.Component {
+   render() {
+      return (
+         <div>
+            <ul>
+               <li>EMAIL US</li>
+               <li>ABOUT US</li>
+               <li>CONTACT US</li>
+               <li>TESTIMONY</li>
+            </ul>
+
+           {this.props.children}
+         </div>
+      )
+   }
+}*/
+const Google = () => <div><Links/><h1>Welcome to Google</h1>
+                         <p><a href="https://www.google.com/">Google</a></p>
+                         </div>
+const Facebook = () => <div><Links/>
+<h1></h1>
+       <h2>Please Login into Page</h2>
+       <p><a href="https://www.Facebook.com/">Facebook</a></p>
+
+</div>
+
+const GMail = () => <div><Links/><h3>Login into GMail</h3>
+                        <p><a href="https://www.GMail.com/">GMail</a></p>
+                     </div>
+
+const Links = () =>
+	<nav>
+		<span className="Link"><Link to="/">Google</Link></span>
+		<span className="Link"><Link to="/Facebook">Facebook</Link></span>
+		<span className="Link"><Link to="/GMail">GMail</Link></span>
+	</nav>
+
+
+
+const App = () => {
+	return (
+		<Router history={ browserHistory }>
+			<Route path="/" component={Google}></Route>
+
+			<Route path="/Facebook" component={Facebook}></Route>
+
+			<Route path="/GMail" component={GMail}></Route>
+
+		</Router>
+	)
+}
+
 export default App;
+
 
