@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: green;
+}
+.App-intro {
+  font-size: large;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.bodyStyle {
+  background-image: url("http://wall.rimbuz.com/wp-content/uploads/4K-HD-Background-Wallpapers.jpg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;
+  text-align: center;
+  color: red;
+}
+.bodyStyle3 {
+  color: red;
+  background-image: url("https://4.bp.blogspot.com/-ke1gxRPCjkw/VF8ECeG3q1I/AAAAAAABVDA/Gys0pALCZNc/s0/Dodge%2BViper%2BGTS%2BUHD.jpg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle2 {
+  color: red;
+  background-image: url("https://wallpaperscraft.com/image/face_paint_profile_abstraction_95073_3840x2400.jpg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle1 {
+  color: Black;
+  background-image: url("https://wallpaperscraft.com/image/child_angel_cupid_arrows_69889_3840x2160.jpg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;;
+  text-align: center;;;
+}
+.bodyStyle0 {
+  color: red;
+  background-image: url("http://wall.rimbuz.com/wp-content/uploads/4k-Resolution-High-Definition-Backgrounds.jpg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle02 {
+  color: red;
+  background-image: url("https://4.bp.blogspot.com/-k8IX2Mkf0Jo/U4ze2gNn7CI/AAAAAAAA7xg/iKxa6bYITDs/s0/HOT+Balloon+Trip_Ultra+HD.jpg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle04 {
+  color: red;
+  background-image: url("http://cutewallpaper.org/wp-content/uploads/2016/08/4k-wallpaper-1.jpg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;
+  text-align: center;
+}.bodyStyle03 {
+  color: red;
+  background-image: url("http://axeetech.com/wp-content/uploads/2015/08/Windows_10_4k_Wallpapers-1.jpeg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle01 {
+  color: red;
+  background-image: url("http://wallpapersdsc.net/wp-content/uploads/2015/12/12150.jpg");
+  background-size: cover;         /* Generic*/
+width: 100%;
+  align-content: center;
+  text-align: center;
+}
+.headerPart {
+  color:blue;
+  text-align: center;
+}
+h1 p h2{
+  text-align: center;
+}
+img{
+  width: 100%;
+}
+ul li{
+  list-style-type: none;
+}
+.links {
+  margin-left: 10px;
+  color:red;
+  text-align: center;
+}
+/* unvisited link */
+.links:link {
+    color: red;
+}
+
+/* visited link */
+.links:visited {
+    color: green;
+}
+
+/* mouse over link */
+.links:hover {
+    color: white;
+}
+
+/* selected link */
+.links:active {
+    color: blue;
+}
+nav {
+  text-align: center;
+}
+table, th, td {
+    border: 1px solid green;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
