@@ -25,7 +25,9 @@ renderItemsAction(){
     if(this.state.isEdit){
         return(
         <td>
-            <button className="btn btn-success">Save</button>
+            <button className="btn btn-success">
+                <span className="glyphicon glyphicon-save"> Save</span>
+            </button>
             <button className="btn btn-danger" onClick={this.cancelClick.bind(this)}>Cancel</button>
         </td>
         )
@@ -33,8 +35,12 @@ renderItemsAction(){
 
     return(
         <td>
-            <button className="btn btn-primary" onClick={this.editClick.bind(this)}>Edit</button>
-             <button className="btn btn-danger">Delete</button>
+            <button className="btn btn-primary" onClick={this.editClick.bind(this)}>
+             <span className="glyphicon glyphicon-pencil"> Edit</span>
+            </button>
+             <button className="btn btn-danger">
+             <span className="glyphicon glyphicon-trash"> Delete</span>
+             </button>
         </td>
 
     )
