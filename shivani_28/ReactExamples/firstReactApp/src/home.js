@@ -6,7 +6,7 @@ class HomeContent extends Component {
         return (
 
         	<div>
-        		<h3>This is HomePage</h3>        	
+        		<h3>This is HomePage Content</h3>        	
         	</div>
 
         	);

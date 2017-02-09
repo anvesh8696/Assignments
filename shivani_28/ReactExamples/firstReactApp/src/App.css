@@ -15,49 +15,60 @@
 .navbar-nav{
 
   margin-left: 450px;
-   background-color: #222;
+   
 }
 
 .App-header {
-  background-color: #222;
+ // background-color: #222;
+ background: linear-gradient(#222, #339b8f);
   height: 80px;
   padding: 20px;
   color: white;
 }
 
-#logo{
-  font-size: 20px;
-  color: #0EF0F0;
+.sideBar{
+    left: -30px;
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.childContainer{
+  float:left;
+  width: 80%;
+  //overflow: auto;
+ position: absolute;
+  left: 180px;
 }
 
 
-.App-hp{
-
-  margin-top: 50px;
-  width: 900px;
-  height: 350px;
-}
 .container{
 
   margin-top: 20px;
+  //text-align: center;
+}
+
+.jumbotron{
+  color: black;
+  width: 80%;
+}
+
+table td{
   text-align: center;
 }
-
-table{
-
-  color: black;
-}
 .App-footer{
-  background-color: #4d5460;
+  //background-color: #4d5460;
+  background: linear-gradient(#222, #339b8f);
   height: 50px;
   padding: 10px;
   color: white;
-  margin-top: 290px;
+  margin-top: 880px; 
+  text-align: center;
+}
 
-}
-.App-intro {
-  font-size: large;
-}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -66,11 +77,9 @@ table{
 
 
 table th{
-
   text-align: center;
 }
 
  .filter-input{
-
-float: right;
+    float: right;
 }

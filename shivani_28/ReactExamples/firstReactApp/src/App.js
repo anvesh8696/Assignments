@@ -4,7 +4,9 @@ import HomeContent  from './home.js';
 import AboutContent  from './about.js';
 import ContactContent  from './contact.js';
 import ReactContent from './reactjs.js';
- import './App.css';
+import UserTable from './usertable.js';
+import FilmContent from './films.js';
+import './App.css';
 
 
 class App extends Component{
@@ -13,12 +15,17 @@ class App extends Component{
             <div>
                 <Header></Header>
                 <Router history={ browserHistory }>
-                        <Route path="/" component={LandingPage}>
+                        <Route path="/" component={Nav}>
                             <IndexRoute component={Home} />
                         </Route>
                         <Route path="about" component={About} />    
                         <Route path="contact" component={Contact} />
                         <Route path="react" component={ReactJs} />
+
+                        <Route path="films" component={Films} />
+                        <Route path="warships" component={Warships} />
+                        <Route path="actors" component={Actors} />
+                        <Route path="userInfo" component={DataEntry} />
                 </Router>
                 <Footer></Footer>
             </div>
@@ -41,26 +48,22 @@ class Nav extends Component{
     render(){
         return(
                <div>
-                    <nav className="navbar navbar-inverse">
+                    <nav className="navbar navbar-default">
                         <div className="container-fluid">
-
-                            <div className="navbar-header">
-                                <Link className="navbar-brand" to="/"></Link>
-                            </div>
 
                             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                                 <ul className="nav navbar-nav">
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="/about">About</Link></li>
-                                    <li><Link to="/contact">Contact Us</Link></li>
-                                    <li><Link to="/react">React Examples</Link></li>
+                                    <li><Link activeStyle={{color:'orange'}} to="/">Home</Link></li>
+                                    <li><Link activeStyle={{color:'orange'}} to="/about">About</Link></li>
+                                    <li><Link activeStyle={{color:'orange'}} to="/contact">Contact Us</Link></li>
+                                    <li><Link activeStyle={{color:'orange'}} to="/react">React Examples</Link></li>
                                 </ul>
 
                             </div>
                         </div>
                     </nav>
-                    <div>
+                    <div className="childContainer col-sm-10">
                         {this.props.children}
                     </div>
                </div>
@@ -72,15 +75,27 @@ class Nav extends Component{
 class Home extends Component{
     render(){
         return(
-            <div><Nav/><HomeContent/></div>
+            <div><HomeContent/></div>
         );
     }
 }
 
 class About extends Component{
+
+  constructor(){
+
+    super();
+    this.state={
+      title: 'What is React?'
+    }
+  }
+
+changeTitle(){
+    this.setState({title: 'Title has changed'})
+  }
     render(){
         return(
-            <div><Nav/><AboutContent/></div>
+            <div><Nav/><AboutContent title={this.state.title} changeTitle={this.changeTitle.bind(this)}/></div>
 
         );
     }
@@ -101,12 +116,29 @@ class ReactJs extends Component{
     }
 }
 
-class LandingPage extends Component{
+class DataEntry extends Component{
     render(){
-        return(<div><Nav/><h1>This is the landing Page</h1><HomeContent/></div>);
+        return(<div><Nav/><ReactContent/><UserTable /></div>);
     }
 }
 
+class Films extends Component{
+    render(){
+        return(<div><Nav/><ReactContent/><FilmContent /></div>);
+    }
+}
+
+class Warships extends Component{
+    render(){
+        return(<div><Nav/><ReactContent/><h1 className="childContainer col-sm-10">These are Warships</h1></div>);
+    }
+}
+
+class Actors extends Component{
+    render(){
+        return(<div><Nav/><ReactContent/><h1 className="childContainer col-sm-10">These are Actors</h1></div>);
+    }
+}
 
 class Footer extends Component {
 
