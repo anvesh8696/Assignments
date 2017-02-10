@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: blue;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.links {
+  text-align: center;
+}
+.bodyStyle {
+  background-image: url("http://www.imagestowallpapers.com/wp-content/uploads/2015/12/Background-Image-CSS3.jpg");
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle3 {
+  background-image: url("https://4.bp.blogspot.com/-ke1gxRPCjkw/VF8ECeG3q1I/AAAAAAABVDA/Gys0pALCZNc/s0/Dodge%2BViper%2BGTS%2BUHD.jpg");
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle2 {
+  background-image: url("https://wallpaperscraft.com/image/face_paint_profile_abstraction_95073_3840x2400.jpg");
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle1 {
+  background-image: url("https://wallpaperscraft.com/image/child_angel_cupid_arrows_69889_3840x2160.jpg");
+  align-content: center;
+  text-align: center;
+}
+.headerPart {
+  color:blue;
+  text-align: center;
+}
+h1 p h2{
+  text-align: center;
+}
+img{
+  width: 2048px;
+}
+ul li{
+  list-style-type: none;
+}
+.links {
+  margin-left: 10px;
+}
+nav {
+  text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: blue;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.links {
+  text-align: center;
+}
+.bodyStyle {
+  background-image: url("http://wall.rimbuz.com/wp-content/uploads/4K-HD-Background-Wallpapers.jpg");
+  align-content: center;
+  text-align: center;
+  color: red;
+}
+.bodyStyle3 {
+  background-image: url("https://4.bp.blogspot.com/-ke1gxRPCjkw/VF8ECeG3q1I/AAAAAAABVDA/Gys0pALCZNc/s0/Dodge%2BViper%2BGTS%2BUHD.jpg");
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle2 {
+  background-image: url("https://wallpaperscraft.com/image/face_paint_profile_abstraction_95073_3840x2400.jpg");
+  align-content: center;
+  text-align: center;
+}
+.bodyStyle1 {
+  background-image: url("https://wallpaperscraft.com/image/child_angel_cupid_arrows_69889_3840x2160.jpg");
+  align-content: center;
+  text-align: center;
+}
+.headerPart {
+  color:blue;
+  text-align: center;
+}
+h1 p h2{
+  text-align: center;
+}
+img{
+  width: 2048px;
+}
+ul li{
+  list-style-type: none;
+}
+.links {
+  margin-left: 10px;
+}
+nav {
+  text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
